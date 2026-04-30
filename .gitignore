@@ -1,0 +1,58 @@
+# ──────────────────────────────────────────────
+#  Python & Environment
+# ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+.venv/
+venv/
+env/
+ENV/
+.env
+!.env.example
+
+# ──────────────────────────────────────────────
+#  FastAPI & Web
+# ──────────────────────────────────────────────
+.fastapi/
+.uvicorn/
+*.log
+
+# ──────────────────────────────────────────────
+#  Data & Storage (ChromaDB)
+# ──────────────────────────────────────────────
+data/chroma_db/
+*.db
+*.sqlite3
+*.sqlite
+data/
+!data/dummy/
+# Keep dummy data directory but ignore runtime databases
+
+# ──────────────────────────────────────────────
+#  IDE / Editor / OS
+# ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ──────────────────────────────────────────────
+#  Testing / Coverage
+# ──────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
